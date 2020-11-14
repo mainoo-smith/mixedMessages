@@ -41,3 +41,5 @@ function displayMessage(){
 
 // add event and call the display message function
 window.addEventListener('click', displayMessage);
+
+  
