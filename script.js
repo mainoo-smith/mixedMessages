@@ -26,12 +26,18 @@ const facts = [
     ― Chuck Palahniuk`
 ];
 
-let mixedArray = [];
- mixedArray = mixedArray.concat(inspiration,joke,facts);
-
-const randomizeMessage = (data = []) => {
-    let message = data[Math.floor(Math.random() * data.length)];
-    console.log(message);
+// generate the random message from an array
+const randomizeMessage = () => {
+    let mixedArray = [];
+    mixedArray = mixedArray.concat(inspiration,joke,facts);
+    let message = mixedArray[Math.floor(Math.random() * mixedArray.length)];
+    return message;
 }
 
-randomizeMessage(mixedArray);
+// create  a function to display the message
+function displayMessage(){
+    window.document.getElementById("message").innerHTML = randomizeMessage();
+}
+
+// add event and call the display message function
+window.addEventListener('click', displayMessage);

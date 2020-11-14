@@ -1,0 +1,31 @@
+body{
+    background-color: burlywood;
+    margin: auto;
+    
+}
+
+h1{
+    margin: 20px;
+    text-align: center;
+
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    text-align: center;
+    border: 1px solid rgba(53, 102, 8, 0.459);
+}
+
+#message{
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid green; 
+  background-color: blanchedalmond;
+  text-align: center;
+  padding: 5px;
+}
